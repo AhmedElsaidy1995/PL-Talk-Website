@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Premier League , BPL ">
+    <link rel="stylesheet" type="text/css" href="MyCSS.css">
+    <link rel="shortcut icon" href="PL-Talk-Icon.png" />
+    <script src="JavaScript.js">
+    </script>
+    <title> PL Talk</title>
+</head>
+<body>
+    
+
+    <div id="header">
+        <img src="web_logo.png" class="logo" alt="logo">
+        <h1 class="head">PL Talk</h1>
+        <form id="register" class="register">
+            <label class="logintxt">User Name:</label>
+            <input type="text" id="Usertxtbox"><br /><br />
+            <label class="logintxt">Password: </label>
+            <input type="password" id="passtxtbox"><br /><br />
+            <button class="login" onclick="LogIn(getElementById('Usertxtbox'), getElementById('passtxtbox'))">Log in</button>
+            <a href="SignUp.html">sign up</a>
+        </form>
+    </div>
+    <div id="nav"> 
+        <a class="navLinks" href="home.html">Home</a>
+        <a class="navLinks" href="Teams.html">Teams</a>
+        <a class="navLinks" href="Fixtures.html">Fixtures</a>
+        <a class="navLinks" href="Statistics.html">Statistics</a>
+        <a class="navLinks" href="Fantasy.html">Fantasy Community</a>
+        <a class="navLinks" href="ContactUs.html">Contact us</a>   
+    </div>
+    <div id="homebody">
+
+    <div id="news">
+        <div id="lastestNewsHead"><b>Lastest News</b>
+        </div>
+          <div id="newsContainer">
+            <div id="news1">
+                <img src="News/vardyRanieri.jpg" alt="news1" class="headnews">
+                <h3 class="headnews">Leicester City</h3> 
+                <h1 class="headnews"><a href="News1.html">Vardy and Ranieri win Barclays monthly awards</a></h1>
+                <p class="headnews">Leicester City's Jamie Vardy and Claudio Ranieri have won the Barclays Player and Manager of the Month respectively for November.</p>
+            </div>
+            <div id="news2">
+                <img src="News/ARSMCI.jpg" alt="news2" class="headnews" height="299" width="512">
+                <h3 class="headnews">Arsenal 2-1 Man City</h3>
+                <h1 class="headnews">Ozil Assists close the gap with leicester</h1>
+                <p class="headnews">
+                    Arsenal came out on top in the battle of the Barclays Premier League title favourites as goals from Theo Walcott and Olivier Giroud beat Manchester City 2-1 at Emirates Stadium.
+            </div>
+            <div id="news3">
+                <img src="News/WATLIV.jpg" alt="news2" class="headnews" height="112" width="192">
+                <h1 class="subnews">Watford extendes win run against liverpool</h1>
+            </div>
+            <div id="news4">
+                <img src="News/BOUMCU.jpg" alt="news2" class="headnews" height="112" width="192">
+                <h1 class="subnews">United stunned at bournmouth</h1>
+            </div>
+            <div id="news5">
+                <img src="News/norwichEverton.jpg" alt="news2" class="headnews" height="112" width="192">
+                <h1 class="subnews">Hoolahan goal seal draw for norwich</h1>
+                </div>
+            <div id="news6">
+                  
+                <img src="News/monk.jpg" alt="news2" class="headnews" height="106" width="192">
+                <h1 class="subnews"><a href="http://www.swanseacity.net/news/article/swansea-city-part-company-with-garry-monk-2843467.aspx">Swansea sack gary monk</a></h1>
+            </div>
+            <h2 class="older"><a href="home.html"> &lt;&lt;&lt;Older </a></h2>
+            <h2 class="newer"><a href="home.html"> Newer&gt;&gt;&gt; </a></h2>
+        </div>
+    </div>
+
+        <div id="table">
+            <table>
+                <tr>
+                    <th>Pos</th>
+                    <th width="100px">Team</th>
+                    <th>Pld</th>
+                    <th width="20px">Pt</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Man. City</td>
+                    <td>12</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Arsenal</td>
+                    <td>12</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Leicester</td>
+                    <td>12</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Man. Utd</td>
+                    <td>12</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Spurs</td>
+                    <td>12</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>West Ham</td>
+                    <td>12</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Southampton</td>
+                    <td>12</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Crystal palace</td>
+                    <td>12</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Bournemouth</td>
+                    <td>12</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>22</td>
+                </tr>
+
+            </table>
+        </div>
+        <div id="homepolls">
+            <h1 class="pollshead">Polls</h1>
+            <div id="homepoll1">
+                <h3 class="polls">Will mourinho sacked from Chelsea job?</h3>
+                <form class="pollsform" name="pollform">
+                    <input type="radio" name="poll1" value="Yes"><span>Yes</span><br/>
+                    <input type="radio" name="poll1" value="No"><span>No</span><br/>
+                    <input type="button" value="Submit" onclick="pollResult(getElementById('homepoll1'))">
+                </form>    
+            </div>
+            <div id="homepoll2">
+                <h3 class="polls">Can Leicester win the league title?</h3>
+                <form class="pollsform">
+                    <input type="radio" name="poll2" value="Yes">Yes<br />
+                    <input type="radio" name="poll2" value="No">No<br />
+                    <input type="submit" value="Submit" onclick="pollResult(getElementById('homepoll2'))">
+                </form>
+            </div>
+            <div id="homepoll3">
+                <h3 class="polls">Is sacking Gary Monk right decision?</h3>
+                <form class="pollsform">
+                    <input type="radio" name="poll3" value="Yes">Yes<br />
+                    <input type="radio" name="poll3" value="no">No<br />
+                    <input type="submit" value="Submit" onclick="pollResult(getElementById('homepoll3'))">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <h3> AAST 2015</h3>
+    </div>
+    <script>
+        logged();
+    </script>
+
+</body>
+</html>

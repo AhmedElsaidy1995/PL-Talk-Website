@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Premier League , BPL ">
+    <link rel="stylesheet" type="text/css" href="MyCSS.css">
+    <link rel="shortcut icon" href="PL-Talk-Icon.png" />
+    <script src="JavaScript.js">
+    </script>
+    <title> PL Talk</title>
+</head>
+<body>
+
+
+    <div id="header">
+        <img src="web_logo.png" class="logo" alt="logo">
+        <h1 class="head">PL Talk</h1>
+        <form id="register" class="register">
+            <label class="logintxt">User Name:</label>
+            <input type="text" id="Usertxtbox"><br /><br />
+            <label class="logintxt">Password: </label>
+            <input type="password" id="passtxtbox"><br /><br />
+
+            <button class="login" onclick="LogIn(document.getElementById('Usertxtbox'), document.getElementById('passtxtbox'))">Log in</button>
+            <a href="SignUp.html">sign up</a>
+        </form>
+    </div>
+    <div id="nav">
+        <a class="navLinks" href="home.html">Home</a>
+        <a class="navLinks" href="Teams.html">Teams</a>
+        <a class="navLinks" href="Fixtures.html">Fixtures</a>
+        <a class="navLinks" href="Statistics.html">Statistics</a>
+        <a class="navLinks" href="Fantasy.html">Fantasy Community</a>
+        <a class="navLinks" href="ContactUs.html">Contact us</a>
+    </div>
+    <div id="Contactbody">
+
+
+        <div id="lastestNewsHead">
+            <b>Contact Us</b>
+        </div>
+
+        <div id="contactcontent">
+            <div class="feedbackform">
+                <form>
+                    Send Us your feedback here<br />
+                    <textarea class="comment" rows="04"></textarea><br />
+                    Email:<input type="email">&nbsp;&nbsp;&nbsp;
+                    <input type="submit" value="send">
+                </form>
+            </div>
+            <div class="contactinfo">
+                Made By : Ahmed Mohamed Ragab <br />
+                Email: ahmedelsaidy1995@gmail.com<br />
+                Under supervision from : Eng. Mohamed Ghoneim<br />
+                All rights reserved to Arab Academy of maritime & transport
+            </div>
+            </div>
+
+
+    </div>
+
+    <div id="footer">
+        <h3>AAST 2015</h3>
+    </div>
+    <script>
+        logged();
+    </script>
+</body>
+</html>

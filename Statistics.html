@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Premier League , BPL ">
+    <link rel="stylesheet" type="text/css" href="MyCSS.css">
+    <link rel="shortcut icon" href="PL-Talk-Icon.png" />
+    <script src="JavaScript.js">
+    </script>
+    <style type="text/css">
+        th, td {
+            border: 1px solid #000066;
+            height: 48px;
+        }
+
+        th {
+            background-color: #3CC;
+        }
+
+        td {
+            background-color: white;
+            color: #000066;
+        }
+    </style>
+    <title> PL Talk:Statistics</title>
+</head>
+<body>
+
+
+    <div id="header">
+        <img src="web_logo.png" class="logo" alt="logo">
+        <h1 class="head">PL Talk</h1>
+        <form id="register" class="register">
+            <label class="logintxt">User Name:</label>
+            <input type="text" id="Usertxtbox"><br /><br />
+            <label class="logintxt">Password: </label>
+            <input type="password" id="passtxtbox"><br /><br />
+
+            <button class="login" onclick="LogIn(document.getElementById('Usertxtbox'), document.getElementById('passtxtbox'))">Log in</button>
+            <a href="SignUp.html">sign up</a>
+        </form>
+    </div>
+    <div id="nav">
+        <a class="navLinks" href="home.html">Home</a>
+        <a class="navLinks" href="Teams.html">Teams</a>
+        <a class="navLinks" href="Fixtures.html">Fixtures</a>
+        <a class="navLinks" href="Statistics.html">Statistics</a>
+        <a class="navLinks" href="Fantasy.html">Fantasy Community</a>
+        <a class="navLinks" href="ContactUs.html">Contact us</a>   
+    </div>    
+    <div id="Statisticsbody">
+        <div id="chooseStatistic">
+            <form>
+                View: &nbsp;
+                <select>
+                    <option value="all" selected="selected">All players</option>
+                    <option value="GK">Goalkeepers</option>
+                    <option value="DF">Defenders</option>
+                    <option value="MF">Midfielders</option>
+                    <option value="FW">Forwards</option>
+                    <option value="ars">Arsenal</option>
+                    <option value="ast">Aston Villa</option>
+                    <option value="bou">Bournemouth</option>
+                    <option value="che">Chelsea</option>
+                    <option value="cry">Crystal Palace</option>
+                    <option value="eve">Everton</option>
+                    <option value="lei">Leicester</option>
+                    <option value="liv">Liverpool</option>
+                    <option value="mci">Man City</option>
+                    <option value="mun">Man Utd</option>
+                    <option value="ncu">Newcastle</option>
+                    <option value="nor">Norwich</option>
+                    <option value="sou">Southampton</option>
+                    <option value="tot">Spurs</option>
+                    <option value="sto">Stoke</option>
+                    <option value="sun">Sunderland</option>
+                    <option value="swa">Swansea</option>
+                    <option value="wat">Watford</option>
+                    <option value="wba">West Brom</option>
+                    <option value="whu">West Ham</option>
+                </select>
+                &nbsp;  Sorted By: &nbsp;
+                <select>
+                    <option value="gs" selected="selected">Goals scored</option>
+                    <option value="min">Minutes played</option>
+                    <option value="assists">Assists</option>
+                    <option value="cs">Clean sheets</option>
+                    <option value="gc">Goals conceded</option>
+                    <option value="owng">Own goals</option>
+                    <option value="ps">Penalties saved</option>
+                    <option value="pm">Penalties missed</option>
+                    <option value="yc">Yellow cards</option>
+                    <option value="rc">Red cards</option>
+                    <option value="s">Saves</option>
+                </select> &nbsp;
+                <input type="submit" value="Go">
+            </form>
+        </div>
+        <table id="Statisticstable">
+            <tr>
+                <th>Players</th>
+                <th>Team</th>
+                <th title="Position">Pos</th>
+                <th title="Mintues Played">Min.</th>
+                <th title="Goals Scored">GS</th>
+                <th title="Assists">A</th>
+                <th title="Clean Cheets">CS</th>
+                <th title="Yellow Cards">YC</th>
+                <th title="Red Cards">RC</th>
+            </tr>
+            <tr>
+                <td style="width :150px">Vardy</td>
+                <td style="width :48px"> <img class="fixtureslogo" src="Teams_Logos/Leicester.png" alt="Leicester"> </td>
+                <td style="width :50px">FW</td>
+                <td style="width :50px">500</td>
+                <td style="width :50px">12</td>
+                <td style="width :50px">4</td>
+                <td style="width :50px">1</td>
+                <td style="width :50px">2</td>
+                <td style="width :50px">0</td>
+            </tr>
+            <tr>
+                <td>Ighalo</td>
+                <td> <img class="fixtureslogo" src="Teams_Logos/Watford.png" alt="Watford"> </td>
+                <td>FW</td>
+                <td>500</td>
+                <td>7</td>
+                <td>4</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Pelle</td>
+                <td> <img class="fixtureslogo" src="Teams_Logos/Southampton.png" alt="Southampton"> </td>
+                <td>FW</td>
+                <td>500</td>
+                <td>7</td>
+                <td>4</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Payet</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/West_Ham.png" alt="West Ham"> </td>
+                <td>FW</td>
+                <td>500</td>
+                <td>7</td>
+                <td>8</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Lukaku</td>
+                <td> <img class="fixtureslogo" src="Teams_Logos/Everton.png" alt="Everton"> </td>
+                <td>FW</td>
+                <td>500</td>
+                <td>7</td>
+                <td>4</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Vardy</td>
+                <td> <img class="fixtureslogo" src="Teams_Logos/Leicester.png" alt="Leicester"> </td>
+                <td>FW</td>
+                <td>500</td>
+                <td>12</td>
+                <td>4</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Mahrez</td>
+                <td> <img class="fixtureslogo" src="Teams_Logos/Leicester.png" alt="Leicester"> </td>
+                <td>FW</td>
+                <td>500</td>
+                <td>12</td>
+                <td>4</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Vardy</td>
+                <td> <img class="fixtureslogo" src="Teams_Logos/Leicester.png" alt="Leicester"> </td>
+                <td>FW</td>
+                <td>500</td>
+                <td>12</td>
+                <td>4</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Vardy</td>
+                <td> <img class="fixtureslogo" src="Teams_Logos/Leicester.png" alt="Leicester"> </td>
+                <td>FW</td>
+                <td>500</td>
+                <td>12</td>
+                <td>4</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Vardy</td>
+                <td> <img class="fixtureslogo" src="Teams_Logos/Leicester.png" alt="Leicester"> </td>
+                <td>FW</td>
+                <td>500</td>
+                <td>12</td>
+                <td>4</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Ighalo</td>
+                <td> <img class="fixtureslogo" src="Teams_Logos/Watford.png" alt="Watford"> </td>
+                <td>FW</td>
+                <td>500</td>
+                <td>7</td>
+                <td>4</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Pelle</td>
+                <td> <img class="fixtureslogo" src="Teams_Logos/Southampton.png" alt="Southampton"> </td>
+                <td>FW</td>
+                <td>500</td>
+                <td>7</td>
+                <td>4</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Payet</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/West_Ham.png" alt="West Ham"> </td>
+                <td>FW</td>
+                <td>500</td>
+                <td>7</td>
+                <td>8</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Lukaku</td>
+                <td> <img class="fixtureslogo" src="Teams_Logos/Everton.png" alt="Everton"> </td>
+                <td>FW</td>
+                <td>500</td>
+                <td>7</td>
+                <td>4</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Vardy</td>
+                <td> <img class="fixtureslogo" src="Teams_Logos/Leicester.png" alt="Leicester"> </td>
+                <td>FW</td>
+                <td>500</td>
+                <td>12</td>
+                <td>4</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+            </tr>
+
+        </table>
+        <h2 class="Statisticsprev"><a href="Statistics.html">Prev</a></h2>
+        <h2 class="Statisticsnext"><a href="Statistics.html">Next</a></h2>
+        <div id="numbersGame">
+            <div id="lastestNewsHead"><b>The Numbers Game</b>
+                <a href="https://twitter.com/OptaJoe"><img src="Statistics/opta.png" alt="opta" class="opta"></a>
+        </div>
+            <div id="numbersSlider">
+                <button class="prevSlider" onclick="numbersSlider('Prev')">prev</button>
+                <img src="Statistics/0.jpg" alt="schweinsteiger" class="imgSlider" id="imgSlider">
+                <button class="nextSlider" onclick="numbersSlider('Next')">next</button>
+                <div class="infoContainer">
+                    <h3 id="numbersInfo" class="numbersInfo">
+                        <label id="bigNumber" class="bigNumber">27</label>
+                        Since his debut in Aug 2013, no Man City player has made more assists in all comps than Jesus Navas (27 – level with D.Silva).                    </h3>
+                </div>
+            </div>
+
+            </div>
+    </div>
+
+    <div id="footer">
+        <h3>AAST 2015</h3>
+    </div>
+    <script>
+        logged();
+    </script>
+
+
+</body>
+</html>

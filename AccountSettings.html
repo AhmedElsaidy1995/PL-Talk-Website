@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Premier League , BPL ">
+    <link rel="stylesheet" type="text/css" href="MyCSS.css">
+    <link rel="shortcut icon" href="PL-Talk-Icon.png" />
+    <script src="JavaScript.js">
+    </script>
+    <title> PL Talk: Account Settings</title>
+</head>
+<body>
+
+
+    <div id="header">
+        <img src="web_logo.png" class="logo" alt="logo">
+        <h1 class="head">PL Talk</h1>
+        <form id="register" class="register">
+            <label class="logintxt">User Name:</label>
+            <input type="text" id="Usertxtbox"><br /><br />
+            <label class="logintxt">Password: </label>
+            <input type="password" id="passtxtbox"><br /><br />
+            <button class="login" onclick="LogIn(getElementById('Usertxtbox'), getElementById('passtxtbox'))">Log in</button>
+            <a href="SignUp.html">sign up</a>
+        </form>
+    </div>
+    <div id="nav">
+        <a class="navLinks" href="home.html">Home</a>
+        <a class="navLinks" href="Teams.html">Teams</a>
+        <a class="navLinks" href="Fixtures.html">Fixtures</a>
+        <a class="navLinks" href="Statistics.html">Statistics</a>
+        <a class="navLinks" href="Fantasy.html">Fantasy Community</a>
+        <a class="navLinks" href="ContactUs.html">Contact us</a>
+    </div>
+    <div id="signupbody">
+
+        <div id="signupHead">
+            <b>Account Settings</b>
+        </div>
+        <div id="signupinfo">
+            <form id="signUpform">
+                <fieldset>
+                    <legend>Required Information:</legend>
+                    <label class="signuptxt"> First Name: </label>
+                    <input type="text" name="FirstName" required><br /><br />
+                    <label class="signuptxt"> Last Name: </label>
+                    <input type="text" name="LastName" required><br /><br />
+                    <label class="signuptxt"> User Name: </label>
+                    <input type="password" name="passtxt" required><br /><br />
+                    <label class="signuptxt"> Password: </label>
+                    <input type="password" name="passtxt" required><br /><br />
+                    <label class="signuptxt"> Confirm Password: </label>
+                    <input type="password" name="cnfrmpasstxt" required><br /><br />
+                    <label class="signuptxt"> Favourite Team: </label>
+                    <select>
+                        <option value="No" selected="selected">No Team</option>
+                        <option value="ars">Arsenal</option>
+                        <option value="ast">Aston Villa</option>
+                        <option value="bou">Bournemouth</option>
+                        <option value="che">Chelsea</option>
+                        <option value="cry">Crystal Palace</option>
+                        <option value="eve">Everton</option>
+                        <option value="lei">Leicester</option>
+                        <option value="liv">Liverpool</option>
+                        <option value="mci">Man City</option>
+                        <option value="mun">Man Utd</option>
+                        <option value="ncu">Newcastle</option>
+                        <option value="nor">Norwich</option>
+                        <option value="sou">Southampton</option>
+                        <option value="tot">Spurs</option>
+                        <option value="sto">Stoke</option>
+                        <option value="sun">Sunderland</option>
+                        <option value="swa">Swansea</option>
+                        <option value="wat">Watford</option>
+                        <option value="wba">West Brom</option>
+                        <option value="whu">West Ham</option>
+                    </select><br /><br />
+                    <label class="signuptxt"> Country: </label>
+                    <input type="text" name="country"><br /><br />
+                    <input type="submit" value="Change" onclick="validateForm(getElementById('signUpform'))">
+                </fieldset>
+            </form>
+        </div>
+
+
+    </div>
+
+    <div id="footer">
+        <h3> AAST 2015</h3>
+    </div>
+    <script>
+        logged();
+    </script>
+
+</body>
+</html>

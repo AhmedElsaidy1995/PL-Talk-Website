@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Premier League , BPL ">
+    <link rel="stylesheet" type="text/css" href="MyCSS.css">
+    <link rel="shortcut icon" href="PL-Talk-Icon.png" />
+    <script src="JavaScript.js">
+    </script>
+    
+    <title>Vardy and Ranieri win Barclays monthly awards</title>
+    </head>
+    <body>
+        
+        <div id="header">
+            <img src="web_logo.png" class="logo" alt="logo">
+            <h1 class="head">PL Talk</h1>
+            <form id="register" class="register">
+                <label class="logintxt">User Name:</label>
+                <input type="text" id="Usertxtbox"><br /><br />
+                <label class="logintxt">Password: </label>
+                <input type="password" id="passtxtbox"><br /><br />
+
+                <button class="login"  onclick="LogIn(document.getElementById('Usertxtbox'), document.getElementById('passtxtbox'))">Log in</button>
+                <a href="SignUp.html">sign up</a>
+            </form>
+        </div>
+<div id="nav">
+    <a class="navLinks" href="home.html">Home</a>
+    <a class="navLinks" href="Teams.html">Teams</a>
+    <a class="navLinks" href="Fixtures.html">Fixtures</a>
+    <a class="navLinks" href="Statistics.html">Statistics</a>
+    <a class="navLinks" href="Fantasy.html">Fantasy Community</a>
+    <a class="navLinks" href="ContactUs.html">Contact us</a>   
+</div>
+
+<div id="Newsbody">
+
+    <div id="newscontent">
+        <h3>11 December 2015</h3>
+        <h3 class="headnews">Leicester City</h3>
+        <h1 class="headnews">Vardy and Ranieri win Barclays monthly awards</h1>
+        <img src="News/vardyRanieri.jpg" alt="news1" class="newsimg">
+        <p class="headnews">
+            Vardy became the fourth man to win successive Barclays Player of the Month awards, following Dennis Bergkamp (August and September 1997), Cristiano Ronaldo (November and December 2006) and Harry Kane (January and February 2015).
+            Ranieri picked up the manager’s accolade for the third time, having won it with Chelsea in September 2003 and March 2004.<br/>
+            In November, the Foxes beat Watford 2-1 and Newcastle United 3-0 before earning a 1-1 draw with Manchester United that put them level on points with Manchester City at the top of the Barclays Premier League, and they have continued their remarkable start to the campaign by going two points clear at the summit ahead of this weekend’s matches.<br/>
+            Vardy scored once in each of those three matches, and his strike against Man Utd at the King Power Stadium made him the first man to score in 11 consecutive BPL fixtures.<br/>
+            The Leicester forward is leading the race for the 2015/16 Barclays Golden Boot with 14 top-flight goals, three clear of nearest challenger Romelu Lukaku.
+        </p>
+    </div>
+    <div id="commentsContainer">
+        <div id="allcomments">
+        <div id="commentshead"><h3 class="comment">Comments</h3></div>
+
+        <div>
+            <div class="commentby"><h3 class="comment">By: Mohamed</h3></div>
+            <h3 class="comment">well deserved</h3>
+        </div>
+        <div>
+            <div class="commentby"><h3 class="comment">By: Mahmoud</h3></div>
+            <h3 class="comment">leicester won't win the title</h3>
+
+        </div>
+        <div>
+            <div class="commentby"><h3 class="comment">By: Ahmed</h3></div>
+            <h3 class="comment">second in row for vardy!!!!</h3>
+
+        </div></div>
+        <form>
+            <div id="addcommenthead">
+                Add Comment:
+                <input type="button" class="postComment" id="postComment" value="post" onclick="newComment(getElementById('allcomments'), getElementById('commentText'))">
+            </div>
+            <textarea id="commentText" class="comment" rows="04"></textarea>
+        </form>
+    </div>
+
+</div>
+        
+
+<div id="footer">
+    <h3>AAST 2015</h3>
+</div>
+        <script>
+            logged();
+            commentBoxUpdate();
+            
+        </script>
+</body>
+</html>

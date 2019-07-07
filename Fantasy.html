@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Premier League , BPL ">
+    <link rel="stylesheet" type="text/css" href="MyCSS.css">
+    <link rel="shortcut icon" href="PL-Talk-Icon.png" />
+    <script src="JavaScript.js">
+    </script>
+    <title> PL Talk: Fantasy Community</title>
+</head>
+<body>
+
+
+    <div id="header">
+        <img src="web_logo.png" class="logo" alt="logo">
+        <h1 class="head">PL Talk</h1>
+        <form id="register" class="register">
+            <label class="logintxt">User Name:</label>
+            <input type="text" id="Usertxtbox"><br /><br />
+            <label class="logintxt">Password: </label>
+            <input type="password" id="passtxtbox"><br /><br />
+
+            <button class="login" onclick="LogIn(document.getElementById('Usertxtbox'), document.getElementById('passtxtbox'))">Log in</button>
+            <a href="SignUp.html">sign up</a>
+        </form>
+    </div>
+    <div id="nav">
+        <a class="navLinks" href="home.html">Home</a>
+        <a class="navLinks" href="Teams.html">Teams</a>
+        <a class="navLinks" href="Fixtures.html">Fixtures</a>
+        <a class="navLinks" href="Statistics.html">Statistics</a>
+        <a class="navLinks" href="Fantasy.html">Fantasy Community</a>
+        <a class="navLinks" href="ContactUs.html">Contact us</a>   
+    </div>
+    <div id="homebody">
+
+        <div id="news">
+            <div id="lastestNewsHead">
+                <b>Fantasy Community</b>
+            </div>
+            <div id="newsContainer">
+                <div id="news1">
+                    <img src="News/vardy.jpg" alt="news1" class="headnews">
+                    <h3 class="headnews">Leicester City</h3>
+                    <h1 class="headnews"><a href="home.html">Are Vardy and Mahrez Fixture Proof?</a></h1>
+                    <p class="headnews"> While all the statistics point to the Newcastle game next week being a banker for owners of the Leicester duo....</p>
+                </div>
+                <div id="news2">
+                    <img src="News/vardy.jpg" alt="news2" class="headnews">
+                    <h3 class="headnews">Arsenal</h3>
+                    <h1 class="headnews">Arsenal's Midfield Options - Sanchez v Ozil</h1>
+                    <p class="headnews">
+                        Only a few weeks ago some people were beginning to use the dreaded ,essential word when referring to Arsenal's Alexis Sanchez,
+                    </p>
+                </div>
+                <div id="news3">
+                    <img src="News/vardy.jpg" alt="news2" class="headnews" height="106" width="192">
+                    <h1 class="subnews">Vardy scoring streak continue</h1>
+                </div>
+                <div id="news4">
+                    <img src="News/vardy.jpg" alt="news2" class="headnews" height="106" width="192">
+                    <h1 class="subnews">Vardy scoring streak continue</h1>
+                </div>
+                <div id="news5">
+                    <img src="News/vardy.jpg" alt="news2" class="headnews" height="106" width="192">
+                    <h1 class="subnews">Vardy scoring streak continue</h1>
+                </div>
+                <div id="news6">
+                    <img src="News/vardy.jpg" alt="news2" class="headnews" height="106" width="192">
+                    <h1 class="subnews">Vardy scoring streak continue</h1>
+                </div>
+                <h2 class="older"><a href="home.html"> &lt;&lt;&lt;Older </a></h2>
+                <h2 class="newer"><a href="home.html"> Newer&gt;&gt;&gt; </a></h2>
+            </div>
+        </div>
+
+
+        <div id="Fantasypolls">
+            <h1 class="pollshead">Polls</h1>
+            <div id="Captainpoll">
+                <h3 class="polls">Who is your captain for Gameweek 16?</h3>
+                <form class="pollsform">
+                    <input type="radio" name="CaptainPoll13" value="vardy">Vardy<br />
+                    <input type="radio" name="CaptainPoll13" value="sanchez">Sanchez<br />
+                    <input type="radio" name="CaptainPoll13" value="De_Bruyne">De Bruyne<br />
+                    <input type="radio" name="CaptainPoll13" value="Aguero">Aguero<br />
+                    <input type="radio" name="CaptainPoll13" value="Lukaku">Lukaku<br />
+                    <input type="radio" name="CaptainPoll13" value="Kane">Kane<br />
+                    <input type="radio" name="CaptainPoll13" value="Ozil">Ozil<br />
+                    <input type="radio" name="CaptainPoll13" value="Ighalo">Ighalo<br />
+                    <input type="radio" name="CaptainPoll13" value="Hazard">Hazard<br />
+                    <input type="radio" name="CaptainPoll13" value="Mahrez">Mahrez<br />
+
+                    <input type="button" value="Submit" onclick="pollResult(getElementById('Captainpoll'))">
+                </form>
+            </div>
+            <div id="homepoll1">
+                <h3 class="polls">Do you Still Own Hazard?</h3>
+                <form class="pollsform">
+                    <input type="radio" name="hazardf" value="yes">Yes<br />
+                    <input type="radio" name="hazardf" value="no">No<br />
+                    <input type="radio" name="hazardf" value="notBuy">I didn't buy him<br />
+                    <input type="submit" value="Submit" onclick="pollResult(getElementById('homepoll1'))">
+                </form>
+            </div>
+            <div id="homepoll2">
+                <h3 class="polls">Who is the best defender till now?</h3>
+                <form class="pollsform">
+                    <input type="radio" name="def" value="Kolarov">Kolarov<br />
+                    <input type="radio" name="def" value="Alderwield">Alderwield<br />
+                    <input type="radio" name="def" value="Darmian">Darmian<br />
+                    <input type="radio" name="def" value="Nyom">Nyom<br />
+                    <input type="radio" name="def" value="Cresswell">Cresswell<br />
+                    <input type="submit" value="Submit" onclick="pollResult(getElementById('homepoll2'))">
+                </form>
+            </div>
+            <div id="homepoll3">
+                <h3 class="polls">Will ayew benefited from mangerial change at swansea ?</h3>
+                <form class="pollsform">
+                    <input type="radio" name="ayewf" value="yes">Yes<br />
+                    <input type="radio" name="ayewf" value="no">No<br />
+                    <input type="submit" value="Submit" onclick="pollResult(getElementById('homepoll3'))">
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <h3> AAST 2015</h3>
+    </div>
+    <script>
+        logged();
+    </script>
+</body>
+</html>

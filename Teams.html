@@ -1,0 +1,382 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Premier League , BPL ">
+    <link rel="stylesheet" type="text/css" href="MyCSS.css">
+    <link rel="shortcut icon" href="PL-Talk-Icon.png" />
+    <script src="JavaScript.js">
+    </script>
+    <title> PL Talk: Teams</title>
+</head>
+<body>
+
+
+    <div id="header">
+        <img src="web_logo.png" class="logo" alt="logo">
+        <h1 class="head">PL Talk</h1>
+        <form id="register" class="register">
+            <label class="logintxt">User Name:</label>
+            <input type="text" id="Usertxtbox"><br /><br />
+            <label class="logintxt">Password: </label>
+            <input type="password" id="passtxtbox"><br /><br />
+            <button class="login" onclick="LogIn(document.getElementById('Usertxtbox'), document.getElementById('passtxtbox'))">Log in</button>
+            <a href="SignUp.html">sign up</a>
+        </form>
+    </div>
+    <div id="nav">
+        <a class="navLinks" href="home.html">Home</a>
+        <a class="navLinks" href="Teams.html">Teams</a>
+        <a class="navLinks" href="Fixtures.html">Fixtures</a>
+        <a class="navLinks" href="Statistics.html">Statistics</a>
+        <a class="navLinks" href="Fantasy.html">Fantasy Community</a>
+        <a class="navLinks" href="ContactUs.html">Contact us</a>   
+    </div>
+    <div id="teamsbody">
+        <div id="teamshead">
+            <b>Teams</b>
+        </div>
+        <div id="TeamsList">
+            <div class="Teamlist1">
+                <div id="ARSteam" class="Teamh1">
+                    <img class="teamLogo" src="Teams_Logos/Arsenal.png" alt="Arsenal"> <br />
+                    <a onmouseover="teamColorOver(this, document.getElementById('ARSteam'), 'red', 'white')" 
+                       onmouseout="teamColorOut(this, document.getElementById('ARSteam'))" 
+                       href="http://www.arsenal.com/home">Arsenal</a>
+                </div>
+                
+                <div id="BOUteam" class="Teamh2">
+                    <img class="teamLogo" src="Teams_Logos/Bournemouth.png" alt="Bournemouth"> <br /> 
+                    <a onmouseover="teamBGOver(this, document.getElementById('BOUteam'), 'BOU.png', 'white')"
+                       onmouseout="teamBGOut(this, document.getElementById('BOUteam'))"
+                       href="http://www.afcb.co.uk/">Bournemouth</a>
+                </div>
+                <div id="BURteam" class="Teamh3">
+                    <img class="teamLogo" src="Teams_Logos/Burnley.png" alt="Burnley"> <br />
+                    <a onmouseover="teamColorOver(this, document.getElementById('BURteam'), '#9E0051', '#A2D2F4')"
+                       onmouseout="teamColorOut(this, document.getElementById('BURteam'))"
+                       href="http://www.avfc.co.uk/">Burnley</a>
+                </div>
+                <div id="CHEteam" class="Teamh4">
+                    <img class="teamLogo" src="Teams_Logos/Chelsea.png" alt="Chelsea"> <br />
+                    <a onmouseover="teamColorOver(this, document.getElementById('CHEteam'), '#013d93', 'white')" 
+                       onmouseout="teamColorOut(this, document.getElementById('CHEteam'))" 
+                       href="http://www.chelseafc.com">Chelsea</a>
+                </div>
+            </div>
+            <div class="Teamlist2">
+                <div id="CRYteam" class="Teamh1">
+                    <img class="teamLogo" src="Teams_Logos/Crystal_Palace.png" alt="Crystal Palace"> <br />
+                    <a onmouseover="teamBGOver(this, document.getElementById('CRYteam'), 'CRY.png', 'white')"
+                       onmouseout="teamBGOut(this, document.getElementById('CRYteam'))"
+                       href="http://www.cpfc.co.uk/">Crystal Palace</a>
+                </div>
+                <div id="EVEteam" class="Teamh2">
+                    <img class="teamLogo" src="Teams_Logos/Everton.png" alt="Everton"> <br /> 
+                    <a onmouseover="teamColorOver(this, document.getElementById('EVEteam'), '#0031A0', 'white')"
+                       onmouseout="teamColorOut(this, document.getElementById('EVEteam'))" 
+                       href="http://www.evertonfc.com/home/">Everton</a>
+                </div>
+                <div id="HULteam" class="Teamh3">
+                    <img class="teamLogo" src="Teams_Logos/Hull.png" alt="Hull"> <br />
+                    <a onmouseover="teamBGOver(this, document.getElementById('HULteam'), 'HUL.png', 'white')"
+                       onmouseout="teamBGOut(this, document.getElementById('HULteam'))"
+                       href="http://www.nufc.co.uk/">Hull City</a>
+                </div>
+                <div id="LEIteam" class="Teamh4">
+                    <img class="teamLogo" src="Teams_Logos/Leicester.png" alt="Leicester"> <br /> 
+                    <a onmouseover="teamColorOver(this, document.getElementById('LEIteam'), '#0031A0', 'white')"
+                       onmouseout="teamColorOut(this, document.getElementById('LEIteam'))"
+                       href="http://www.lcfc.com/">Leicester</a>
+                </div>
+                
+            </div>
+            <div class="Teamlist3">
+                <div id="LIVteam" class="Teamh1">
+                    <img class="teamLogo" src="Teams_Logos/Liverpool.png" alt="Liverpool"> <br />
+                    <a onmouseover="teamColorOver(this, document.getElementById('LIVteam'), '#ff2e2e', 'white')"
+                       onmouseout="teamColorOut(this, document.getElementById('LIVteam'))"
+                       href="http://www.liverpoolfc.tv/">Liverpool</a>
+                </div>
+                <div id="MCIteam" class="Teamh2">
+                    <img class="teamLogo" src="Teams_Logos/Man_City.png" alt="Man City"> <br />
+                    <a onmouseover="teamColorOver(this, document.getElementById('MCIteam'), '#28D1F5', '#006')"
+                       onmouseout="teamColorOut(this, document.getElementById('MCIteam'))"
+                       href="http://www.mcfc.co.uk/">Man City</a>
+                </div>
+                <div id="MUNteam" class="Teamh3">
+                    <img class="teamLogo" src="Teams_Logos/Man_Utd.png" alt="Man Utd"> <br /> 
+                    <a onmouseover="teamColorOver(this, document.getElementById('MUNteam'), '#DE0010', 'white')"
+                       onmouseout="teamColorOut(this, document.getElementById('MUNteam'))"
+                       href="http://www.manutd.com/">Man Utd</a>
+                </div>
+                
+                <div id="MIDteam" class="Teamh4">
+                    <img class="teamLogo" src="Teams_Logos/Middlesbrough.png" alt="Middlesbrough"> <br /> 
+                    <a onmouseover="teamColorOver(this, document.getElementById('MIDteam'), '#DB2930', 'white')"
+                       onmouseout="teamColorOut(this, document.getElementById('MIDteam'))"
+                       href="http://www.canaries.co.uk/">Middlesbrough</a>
+                </div>
+            </div>
+            <div class="Teamlist4">
+                <div id="SOUteam" class="Teamh1">
+                    <img class="teamLogo" src="Teams_Logos/Southampton.png" alt="Southampton"> <br />
+                    <a onmouseover="teamBGOver(this, document.getElementById('SOUteam'), 'SUN.png', 'black')"
+                       onmouseout="teamBGOut(this, document.getElementById('SOUteam'))"
+                       href="http://www.saintsfc.co.uk/">Southampton</a>
+                </div>
+                <div id="TOTteam" class="Teamh2">
+                    <img class="teamLogo" src="Teams_Logos/Spurs.png" alt="Spurs"> <br /> 
+                    <a onmouseover="teamColorOver(this, document.getElementById('TOTteam'), 'white', '#131259')"
+                       onmouseout="teamColorOut(this, document.getElementById('TOTteam'))"
+                       href="http://www.tottenhamhotspur.com/home/">Spurs</a>
+                </div>
+                <div id="STOteam" class="Teamh3">
+                    <img class="teamLogo" src="Teams_Logos/Stoke.png" alt="Stoke"> <br /> 
+                    <a onmouseover="teamBGOver(this, document.getElementById('STOteam'), 'SUN.png', 'blue')"
+                       onmouseout="teamBGOut(this, document.getElementById('STOteam'))"
+                       href="http://www.stokecityfc.com/">Stoke</a>
+                </div>
+                <div id="SUNteam" class="Teamh4">
+                    <img class="teamLogo" src="Teams_Logos/Sunderland.png" alt="Sunderland"> <br /> 
+                    <a onmouseover="teamBGOver(this, document.getElementById('SUNteam'), 'SUN.png', 'black')"
+                       onmouseout="teamBGOut(this, document.getElementById('SUNteam'))"
+                       href="http://www.safc.com/">Sunderland</a>
+                </div>
+            </div>
+            <div class="Teamlist5">
+                <div id="SWAteam" class="Teamh1">
+                    <img class="teamLogo" src="Teams_Logos/Swansea.png" alt="Swansea"> <br />
+                    <a onmouseover="teamColorOver(this, document.getElementById('SWAteam'), 'white', 'black')"
+                       onmouseout="teamColorOut(this, document.getElementById('SWAteam'))"
+                       href="http://www.swanseacity.net/">Swansea</a>
+                </div>
+                <div id="WATteam" class="Teamh2">
+                    <img class="teamLogo" src="Teams_Logos/Watford.png" alt="Watford"> <br /> 
+                    <a onmouseover="teamColorOver(this, document.getElementById('WATteam'), 'Yellow', 'black')"
+                       onmouseout="teamColorOut(this, document.getElementById('WATteam'))"
+                       href="http://www.watfordfc.com/">Watford</a>
+                </div>
+                <div id="WBAteam" class="Teamh3">
+                    <img class="teamLogo" src="Teams_Logos/West_Brom.png" alt="West Brom"> <br /> 
+                    <a onmouseover="teamBGOver(this, document.getElementById('WBAteam'), 'WBA.png', '#DE0010')"
+                       onmouseout="teamBGOut(this, document.getElementById('WBAteam'))"
+                       href="http://www.wba.co.uk/">West Brom</a>
+                </div>
+                <div id="WHUteam" class="Teamh4">
+                    <img class="teamLogo" src="Teams_Logos/West_Ham.png" alt="West Ham"> <br /> 
+                    <a onmouseover="teamColorOver(this, document.getElementById('WHUteam'), '#61223C', 'white')"
+                       onmouseout="teamColorOut(this, document.getElementById('WHUteam'))"
+                       href="http://www.whufc.com/">West Ham</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="table">
+            <table>
+                <tr>
+                    <th>Pos</th>
+                    <th>Team</th>
+                    <th>Pld</th>
+                    <th>GS</th>
+                    <th>GC</th>
+                    <th>GF</th>
+                    <th>Pt</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Man. City</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Arsenal</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Leicester</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Man. Utd</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Spurs</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>West Ham</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Southampton</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Crystal palace</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Bournemouth</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Everton</td>
+                    <td>12</td>
+                    <td>26</td>
+                    <td>9</td>
+                    <td>17</td>
+                    <td>22</td>
+                </tr>
+
+            </table>
+        </div>
+
+
+    </div>
+
+    <div id="footer">
+        <h3> AAST 2015</h3>
+    </div>
+    <script>
+        logged();
+    </script>
+</body>
+</html>

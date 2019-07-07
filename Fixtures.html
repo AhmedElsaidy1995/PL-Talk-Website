@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Premier League , BPL ">
+    <link rel="stylesheet" type="text/css" href="MyCSS.css">
+    <link rel="shortcut icon" href="PL-Talk-Icon.png" />
+    <style type="text/css">
+        th, td {
+            border: 1px solid #000066;
+            height: 48px;
+        }
+
+        th {
+            background-color: #3CC;
+        }
+
+        td {
+            background-color: white;
+            color: #000066;
+        }
+    </style>
+    <script src="JavaScript.js">
+    </script>
+    <title> PL Talk: Fixtures</title>
+</head>
+<body>
+
+
+    <div id="header">
+        <img src="web_logo.png" class="logo" alt="logo">
+        <h1 class="head">PL Talk</h1>
+        <form id="register" class="register">
+            <label class="logintxt">User Name:</label>
+            <input type="text" id="Usertxtbox"><br /><br />
+            <label class="logintxt">Password: </label>
+            <input type="password" id="passtxtbox"><br /><br />
+
+            <button class="login" onclick="LogIn(document.getElementById('Usertxtbox'), document.getElementById('passtxtbox'))">Log in</button>
+            <a href="SignUp.html">sign up</a>
+        </form>
+    </div>
+    <div id="nav">
+        <a class="navLinks" href="home.html">Home</a>
+        <a class="navLinks" href="Teams.html">Teams</a>
+        <a class="navLinks" href="Fixtures.html">Fixtures</a>
+        <a class="navLinks" href="Statistics.html">Statistics</a>
+        <a class="navLinks" href="Fantasy.html">Fantasy Community</a>
+        <a class="navLinks" href="ContactUs.html">Contact us</a>   
+    </div>
+    <div id="fixturesbody">
+        <div id="choosefixture">
+            <form method="post" action="Fixtures.php">
+            choose fixture: &nbsp;
+            <input type="number">
+            <input type="submit" value="Go">
+            </form>
+        </div>
+        <table id="fixturestable">
+            <tr>
+                <th colspan="6">Gameweek 7</th>
+
+            </tr>
+            <tr>
+                <td style="width :150px">30 Sep 21:00</td>
+                <td style="width :48px"> <img class="fixtureslogo" src="Teams_Logos/Everton.png" alt="Everton"> </td>
+                <td style="width :200px">Everton</td>
+                <td style="width :50px">VS</td>
+                <td style="width :200px">Crystal Palace</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/Crystal_Palace.png" alt="Crystal Palace"></td>
+            </tr>
+            <tr>
+                <td>01 Oct 13:30</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/Swansea.png" alt="Swansea"></td>
+                <td>Swansea</td>
+                <td>VS</td>
+                <td>Liverpool</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/Liverpool.png" alt="Liverpool"></td>
+            </tr>
+
+            <tr>
+                <td>01 Oct 16:00</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/Hull.png" alt="Hull"></td>
+                <td>Hull</td>
+                <td>VS</td>
+                <td>Chelsea</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/Chelsea.png" alt="Chelsea"></td>
+            </tr>
+           
+            <tr>
+                <td>01 Oct 16:00</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/Sunderland.png" alt="Sunderland"></td>
+                <td>Sunderland</td>
+                <td>VS</td>
+                <td>West Brom</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/West_Brom.png" alt="West Brom"></td>
+            </tr>
+            <tr>
+                <td>01 Oct 16:00</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/Watford.png" alt="Watford"></td>
+                <td>Watford</td>
+                <td>VS</td>
+                <td>Bournemouth</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/Bournemouth.png" alt="Bournemouth"></td>
+            </tr>
+            <tr>
+                <td>01 Oct 16:00</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/West_Ham.png" alt="West Ham"></td>
+                <td>West Ham</td>
+                <td>VS</td>
+                <td>Middlesbrough</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/Middlesbrough.png" alt="Middlesbrough"></td>
+            </tr>
+            <tr>
+                <td>02 Oct 13:00</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/Man_Utd.png" alt="Man Utd"></td>
+                <td>Man Utd</td>
+                <td>VS</td>
+                <td>Stoke</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/Stoke.png" alt="Stoke"></td>
+            </tr>
+            <tr>
+                <td>02 Oct 15:15</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/Leicester.png" alt="Leicester"></td>
+                <td>Leicester</td>
+                <td>VS</td>
+                <td>Southampton</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/Southampton.png" alt="Southampton"></td>
+            </tr>
+            <tr>
+                <td>02 Oct 15:15</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/Spurs.png" alt="Spurs"></td>
+                <td>Spurs</td>
+                <td>VS</td>
+                <td>Man City</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/Man_City.png" alt="Man City"></td>
+            </tr>
+            <tr>
+                <td>02 Oct 17:30</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/Burnley.png" alt="Burnley"></td>
+                <td>Burnley</td>
+                <td>VS</td>
+                <td>Arsenal</td>
+                <td><img class="fixtureslogo" src="Teams_Logos/Arsenal.png" alt="Arsenal"></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div id="footer">
+        <h3>AAST 2015</h3>
+    </div>
+    <script>
+        logged();
+    </script>
+
+
+</body>
+</html>
